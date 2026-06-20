@@ -1,0 +1,5 @@
+# Dependências fixadas no major version para reprodutibilidade.
+# Para um lock completo, gerar com: pip freeze > requirements.lock
+irc>=20.0,<21
+aiohttp>=3.9,<4
+python-dotenv>=1.0,<2

@@ -1,0 +1,53 @@
+# ───────── Segredos e configuração local ─────────
+# NUNCA commitar o .env real. Usar .env.example como template.
+.env
+.env.*
+!.env.example
+
+# ───────── Estado em runtime ─────────
+# Offset do long-polling Telegram (gerado em runtime)
+.telegram_update_offset
+.telegram_update_offset.tmp
+
+# Base de dados do !seen
+db/
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+*.log.*
+bot.log*
+
+# ───────── Python ─────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# ───────── Ferramentas / IDE / SO ─────────
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+
+data/
+logs/
+db/

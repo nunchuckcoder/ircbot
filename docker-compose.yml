@@ -1,0 +1,21 @@
+services:
+  ircbot:
+    build: .
+    container_name: ircbot
+    restart: unless-stopped
+
+    env_file:
+      - .env
+
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+
+    working_dir: /app
+
+    networks:
+      - ircbot-network
+
+networks:
+  ircbot-network:
+    driver: bridge
